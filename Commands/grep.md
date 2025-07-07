@@ -2,8 +2,17 @@
 - grep -i "pattern" file  : case-insensitive search
 - grep -r "pattern" folder/ : recursive search
 
-## less
-- less file : view file page by page
-
-## timedatectl
-- timedatectl set-time "2025-07-05 14:30:00" : set date and time
+samples
+grep "system" /etc/passwd
+small or capital find
+grep -i "system" /etc/passwd
+or input redirection
+grep -i "system" < /etc/passwd
+Search system to all file in /etc folder
+grep -i "system" /etc/*
+Search system to all file in all directory and subdirectory
+grep -iR "system" /etc/*
+Reverse Search 
+grep -v "system" /etc/passwd
+show line number and result Search
+grep -n "system" /etc/passwd 
