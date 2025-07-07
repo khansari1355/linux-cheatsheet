@@ -10,4 +10,6 @@
 ```bash
 find . -name "filename.txt"
 
+Find anyfile with Extention *.log
 
+find /var/log -type f -name "*.log"
